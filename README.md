@@ -9,23 +9,24 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 ---
 
 
-## Implementation Workflow
+## **Implementation Workflow**
 
 1. **Model Inference**:  
-   Use the SAM2 model for LPM segmentation in a training-free manner
-   [Github_SAM2seg_LPM_T1W.ipynb](Github_SAM2seg_LPM_T1W.ipynb)
-   [Github_SAM2seg_LPM_T2W.ipynb](Github_SAM2seg_LPM_T2W.ipynb)  
+   Perform LPM segmentation using the SAM2 model in a training-free manner.
    
-   Enviroment setup and data curation: [Implementation_steps.md](documentation/Implementation_steps.md)  
+   - [Github_SAM2seg_LPM_T1W.ipynb](Github_SAM2seg_LPM_T1W.ipynb)  
+   - [Github_SAM2seg_LPM_T2W.ipynb](Github_SAM2seg_LPM_T2W.ipynb)  
+   
+   For environment setup and data preparation, refer to: [Implementation_steps.md](documentation/Implementation_steps.md)
 
-3. **Post-Processing**:     
+2. **Post-Processing**:     
    Refer to: [LPM_seg_curated_into_top1_mask.ipynb](LPM_seg_curated_into_top1_mask.ipynb)  
 
-4. **Segmentation Accuracy Evaluation**:  
+3. **Segmentation Accuracy Evaluation**:  
    Assess segmentation performance using Dice Similarity Coefficient (DSC) metrics.  
    Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)  
 
-5. **Statistical Evaluation**:  
+4. **Statistical Evaluation**:  
    Calculate muscle volume using both automated and manual segmentations.  
    Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)  
 
