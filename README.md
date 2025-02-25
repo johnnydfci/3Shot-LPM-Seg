@@ -13,16 +13,17 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 
 1. **Model Inference**:  
    Use the SAM2 model for LPM segmentation in a training-free manner
+   
    Refer to: [Implementation_steps.md](documentation/Implementation_steps.md)  
 
-2. **Post-Processing**:     
+3. **Post-Processing**:     
    Refer to: [LPM_seg_curated_into_top1_mask.ipynb](LPM_seg_curated_into_top1_mask.ipynb)  
 
-3. **Segmentation Accuracy Evaluation**:  
+4. **Segmentation Accuracy Evaluation**:  
    Assess segmentation performance using Dice Similarity Coefficient (DSC) metrics.  
    Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)  
 
-4. **Statistical Evaluation**:  
+5. **Statistical Evaluation**:  
    Calculate muscle volume using both automated and manual segmentations.  
    Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)  
 
