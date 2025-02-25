@@ -13,8 +13,10 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 
 1. **Model Inference**:  
    Use the SAM2 model for LPM segmentation in a training-free manner
+   [Github_SAM2seg_LPM_T1W.ipynb](Github_SAM2seg_LPM_T1W.ipynb)
+   [Github_SAM2seg_LPM_T2W.ipynb](Github_SAM2seg_LPM_T2W.ipynb)  
    
-   Refer to: [Implementation_steps.md](documentation/Implementation_steps.md)  
+   Enviroment setup and data curation: [Implementation_steps.md](documentation/Implementation_steps.md)  
 
 3. **Post-Processing**:     
    Refer to: [LPM_seg_curated_into_top1_mask.ipynb](LPM_seg_curated_into_top1_mask.ipynb)  
