@@ -1,46 +1,51 @@
-# Three-Shot SAM2 Segmentation Enables Expert-Level Quantification of Lumbar Paraspinal Muscles on Multi-Sequence MRI
+# **SAM2 Model for Lumbar Paraspinal Muscle Segmentation**
 
-Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-level quantification of lumbar parapsinal muscle area and fatty infiltration ratio.
-
-## Method Overview
-
-**3Shot-LPM-Seg** automatically segments the lumbar erector spinae (LES) and multifidus (MF) muscles across T1-weighted, T2-weighted, Dixon water images on the L4/L5 disc level. This method was retrospectively validated across four datasets on a total of 943 MRI slices from 486 participants. 
+This repository implements **SAM2** for **lumbar paraspinal muscle segmentation** using **Linux (Ubuntu 18.04)** with an **RTX 3060 GPU (12GB VRAM)**. The implementation is based on [Facebook Research's SAM2 repository](https://github.com/facebookresearch/sam2).
 
 ---
 
+## **Environment Setup**
 
-## Implementation Workflow
+Before using SAM2, ensure that Python and PyTorch are installed. The model requires:
 
-1. **Slice Selection**:  
-   Annotate the L4/L5 intervertebral disc slices manually and save the data in a CSV file.  
-   Refer to: [img_intercept_L2-L5_github.ipynb](img_intercept_L2-L5_github.ipynb)  
+- **Python**: `>=3.10`
+- **PyTorch**: `>=2.5.1`
+- **Torchvision**: `>=0.20.1`
 
-2. **Model Inference**:  
-   Use the SAM2 model for LPM segmentation in a training-free manner
-   Refer to: [Implementation_steps.md](documentation/Implementation_steps.md)  
+### **Installation Steps**
+```bash
+# Step 1: Create and activate the conda environment
+conda create -n sam2 python=3.10
+conda activate sam2
 
-3. **Post-Processing**:     
-   Refer to: [LPM_seg_curated_into_top1_mask.ipynb](LPM_seg_curated_into_top1_mask.ipynb)  
+# Step 2: Install Jupyter Notebook
+conda install notebook>=5.3 jupyter_server
 
-4. **Segmentation Accuracy Evaluation**:  
-   Assess segmentation performance using Dice Similarity Coefficient (DSC) metrics.  
-   Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)  
+# Step 3: Install PyTorch and dependencies
+conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=11.8 -c pytorch -c nvidia
 
-5. **Statistical Evaluation**:  
-   Calculate muscle volume using both automated and manual segmentations.  
-   Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)  
+# Step 4: Clone the SAM2 repository
+git clone https://github.com/facebookresearch/sam2.git && cd sam2
 
+# Step 5: Install required packages
+pip3 install -r requirements.txt
+```
+
+To **remove** the environment if needed:
+```bash
+conda remove -n sam2 --all
+```
 
 ---
 
+## **Data Download**
+Download the dataset and place the files in the following directories:
 
-## License
-
-This project is licensed under the **Apache License, Version 2.0**.  
-Refer to the [LICENSE](LICENSE) file for details.
+```
+notebook/videos/MRI515_T1
+notebook/videos/MRI515_T2
+```
 
 ---
 
-## Publication
-
-Details of the associated publication will be updated soon.
+This README provides a clear and structured guide for setting up and using the SAM2 model. Copy and paste it into your `README.md` file, and you're good to go! 🚀
