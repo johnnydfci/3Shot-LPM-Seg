@@ -47,5 +47,3 @@ notebook/videos/MRI515_T2
 ```
 
 ---
-
-This README provides a clear and structured guide for setting up and using the SAM2 model. Copy and paste it into your `README.md` file, and you're good to go! 🚀
