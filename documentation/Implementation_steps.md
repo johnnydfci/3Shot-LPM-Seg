@@ -29,6 +29,16 @@ git clone https://github.com/facebookresearch/sam2.git && cd sam2
 
 # Step 5: Install required packages
 pip3 install -r requirements.txt
+
+# Step6: Run the SAM2 video segmentation example to confirm that the environment and file structure are correctly set up:
+
+notebooks/video_predictor_example.ipynb
+
+# Step7: Execute SAM2 for Lumbar Paraspinal Muscle (LPM) segmentation on T1-weighted and T2-weighted images in a training-free manner:
+
+Github_SAM2seg_LPM_T1W.ipynb
+Github_SAM2seg_LPM_T2W.ipynb
+
 ```
 
 To **remove** the environment if needed:
@@ -39,7 +49,7 @@ conda remove -n sam2 --all
 ---
 
 ## **Data Download**
-Download the dataset and place the files in the following directories:
+Download the dataset and extract the files into the following directories. The dataset is provided in both JPG and PNG formats (.zip) within this GitHub repository:
 
 ```
 notebook/videos/MRI515_T1
