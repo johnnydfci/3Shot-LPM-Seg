@@ -28,7 +28,7 @@ conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=
 git clone https://github.com/facebookresearch/sam2.git && cd sam2
 
 # Step 5: Install required packages
-pip3 install -r requirements.txt
+pip3 install -e .
 
 # Step6: Run the SAM2 video segmentation example to confirm that the environment and file structure are correctly set up:
 notebooks/video_predictor_example.ipynb
