@@ -34,6 +34,15 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 
 ---
 
+## Data Download
+
+The curated back-pain patient dataset, consisting of 415 T1-weighted (T1W) slices and 411 T2-weighted (T2W) slices at the L4/L5 disc level, is available in the following directory:
+[notebooks/videos/](notebooks/videos/)
+
+Acknowledgment
+
+The MRI scans in this dataset originate from the publicly available [Lumbar Spine MRI Dataset](https://data.mendeley.com/datasets/k57fr854j2/2). In this release, we additionally provide manual segmentations of the left and right Lumbar Erector Spinae (LES) and Multifidus (MF) muscles as separate classes.
+
 
 ## License
 
