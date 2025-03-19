@@ -25,11 +25,11 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 
 2. **Segmentation Accuracy Evaluation**:  
    Assess segmentation performance using Dice Similarity Coefficient (DSC) metrics.  
-   Refer to: [LPM_seg_accuracy_evluate_in_DSC.ipynb](LPM_seg_accuracy_evluate_in_DSC.ipynb)  
+   Refer to: [notebooks/LPM_DSC_Calculation.ipynb](notebooks/LPM_DSC_Calculation.ipynb)  
 
 3. **Statistical Evaluation**:  
-   Calculate muscle volume using both automated and manual segmentations.  
-   Refer to: [LPM_seg_to_vol_2csv.ipynb](LPM_seg_to_vol_2csv.ipynb)  
+   Calculate muscle area using both automated and manual segmentations.  
+   Refer to: [LPM_Slice_Area_Analysis.ipynb](LPM_Slice_Area_Analysis.ipynb)  
 
 
 ---
