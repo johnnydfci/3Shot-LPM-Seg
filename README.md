@@ -29,7 +29,7 @@ Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-leve
 
 3. **Statistical Evaluation**:  
    Calculate muscle area using both automated and manual segmentations.  
-   Refer to: [LPM_Slice_Area_Analysis.ipynb](LPM_Slice_Area_Analysis.ipynb)  
+   Refer to: [LPM_Slice_Area_Analysis.ipynb](notebooks/LPM_Slice_Area_Analysis.ipynb)  
 
 
 ---
