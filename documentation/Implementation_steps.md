@@ -33,7 +33,12 @@ pip3 install -e .
 # Step6: Run the SAM2 video segmentation example to confirm that the environment and file structure are correctly set up:
 notebooks/video_predictor_example.ipynb
 
-# Step7: Run SAM2 for LPM segmentation on T1-weighted (T1W) and T2-weighted (T2W) MRI images in a training-free manner.
+# Step7: Replace the following files in the original SAM2 repository to output iou_score:
+
+sam2_video_predictor.py → sam2/sam2_video_predictor.py
+sam2_base.py → sam2/modeling/sam2_base.py  
+
+# Step8: Run SAM2 for LPM segmentation on T1-weighted (T1W) and T2-weighted (T2W) MRI images in a training-free manner.
 # We have not re-trained SAM2 but instead use its original weights and implementation code with our LPM dataset.
 Github_SAM2seg_LPM_T1W.ipynb
 Github_SAM2seg_LPM_T2W.ipynb
