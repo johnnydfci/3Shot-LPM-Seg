@@ -3,7 +3,7 @@
 Welcome to the **3Shot-LPM-Seg** repository! Three-Shot SAM2 enables expert-level quantification of lumbar parapsinal muscle area and fatty infiltration ratio.
 
 <p align="center">
-  <img src="documentation/figure2_seg_example.jpg" alt="Graphical Abstract" width="600">
+  <img src="documentation/Figure2_sam2_seg_example.jpg" alt="Graphical Abstract" width="600">
 </p>
 
 ## Method Overview
